@@ -1,0 +1,423 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700);
+/* line 5, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*$font-stack:    Helvetica, sans-serif;*/
+/********************************************
+                  Couleurs
+********************************************/
+/********************************************
+                  Breakpoints
+********************************************/
+/********************************************
+                  General
+********************************************/
+/* line 34, ../sass/screen.scss */
+* {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3vmin;
+}
+
+/* line 38, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+
+/* line 41, ../sass/screen.scss */
+#all {
+  margin: 1vh 2vw;
+}
+
+/* line 44, ../sass/screen.scss */
+main {
+  background-color: #7beffc;
+}
+
+/********************************************
+                  Menu Slider
+********************************************/
+/* line 52, ../sass/screen.scss */
+header {
+  margin-bottom: 20vh;
+  background-color: #fca92f;
+}
+
+/* line 56, ../sass/screen.scss */
+nav {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 61, ../sass/screen.scss */
+li > a:visited, li > a:link {
+  text-decoration: none;
+}
+
+/* line 64, ../sass/screen.scss */
+.da-bar > li > a:hover {
+  font-weight: 600;
+  text-shadow: 0px 0.5em 10px rgba(0, 182, 255, 0.2);
+}
+
+/* line 69, ../sass/screen.scss */
+.da-bar {
+  position: relative;
+  top: 3em;
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+/* line 77, ../sass/screen.scss */
+.da-bar:hover > span {
+  background: #00b6ff;
+}
+/* line 79, ../sass/screen.scss */
+.da-bar .da-item {
+  width: 20%;
+  float: left;
+  font-family: 'Bitter', serif;
+  font-size: 2em;
+  padding-top: 2vw;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  background-color: blueviolet;
+  border-top: 0.13em solid rgba(0, 182, 255, 0.2);
+}
+/* line 92, ../sass/screen.scss */
+.da-bar .da-item:hover {
+  color: #00b6ff;
+}
+/* line 94, ../sass/screen.scss */
+.da-bar .da-item:nth-child(2):hover ~ span {
+  left: 20%;
+}
+/* line 98, ../sass/screen.scss */
+.da-bar .da-item:nth-child(3):hover ~ span {
+  left: 40%;
+}
+/* line 101, ../sass/screen.scss */
+.da-bar .da-item:nth-child(4):hover ~ span {
+  left: 60%;
+}
+/* line 104, ../sass/screen.scss */
+.da-bar .da-item:nth-child(5):hover ~ span {
+  left: 80%;
+}
+/* line 107, ../sass/screen.scss */
+.da-bar .da-item:nth-child(6):hover ~ span {
+  left: 100%;
+}
+
+/* line 114, ../sass/screen.scss */
+.da-item > a {
+  font-size: 1.3vw;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 114, ../sass/screen.scss */
+  .da-item > a {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 767px) {
+  /* line 114, ../sass/screen.scss */
+  .da-item > a {
+    font-size: 2.3vw;
+    font-weight: 600;
+  }
+}
+
+/* line 124, ../sass/screen.scss */
+span {
+  position: relative;
+  bottom: -4.5em;
+  display: block;
+  width: 20%;
+  height: 0.2em;
+}
+
+/* line 133, ../sass/screen.scss */
+.da-bar .da-item, span {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 135, ../sass/screen.scss */
+.da-bar .da-item:hover, span:hover {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/********************************************
+                  Aware-Effects
+********************************************/
+/* line 143, ../sass/screen.scss */
+#catalog {
+  /*width: 1900px;*/
+  margin: 5vh 10vw;
+  /*margin-right: auto;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  text-align: center;*/
+}
+
+/* line 154, ../sass/screen.scss */
+.da-thumbs {
+  list-style: none;
+  padding: 0;
+}
+/* line 157, ../sass/screen.scss */
+.da-thumbs li {
+  background: #fff;
+  float: left;
+  margin: 5px;
+  padding: 8px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* line 164, ../sass/screen.scss */
+.da-thumbs li a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  /*min-width: 30%;*/
+}
+/* line 170, ../sass/screen.scss */
+.da-thumbs li a img {
+  display: block;
+  position: relative;
+  /*min-width: 10vw;*/
+}
+/* line 175, ../sass/screen.scss */
+.da-thumbs li a div {
+  position: absolute;
+  background: #777;
+  background: rgba(75, 75, 75, 0.7);
+  width: 100%;
+  height: 100%;
+}
+/* line 181, ../sass/screen.scss */
+.da-thumbs li a div span {
+  display: block;
+  padding: 10px 0;
+  margin: 40px 20px 20px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Pour le logo en SVG*/
+/* line 200, ../sass/screen.scss */
+.logo {
+  /*position: absolute;*/
+  z-index: 1000;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 206, ../sass/screen.scss */
+#logo {
+  width: 25%;
+  height: 10%;
+  min-width: 150px;
+}
+
+/* line 211, ../sass/screen.scss */
+#Decoration {
+  -webkit-animation: mouvdeco 10s ease-in;
+  /* Chrome, Safari, Opera */
+  animation: mouvdeco 10s ease-in;
+}
+
+/* line 215, ../sass/screen.scss */
+#Otis_Taylor {
+  width: 200%;
+  -webkit-animation: mouvName 10s ease-in;
+  /* Chrome, Safari, Opera */
+  animation: mouName 10s ease-in;
+}
+
+@-webkit-keyframes mouvdeco {
+  0% {
+    /*-webkit-filter: blur(10px);
+    color: #151b1b;
+    width: 30%;*/
+    opacity: 0;
+  }
+  25% {
+    /*-webkit-filter: blur(0px);
+    color: #151b1b;
+    width: 20%;*/
+    opacity: 0;
+  }
+  75% {
+    /*-webkit-filter: blur(10px);
+    width: 30%;*/
+    opacity: 1;
+  }
+  100% {
+    /*-webkit-filter: blur(0px);*/
+    opacity: 1;
+  }
+}
+@keyframes mouvdeco {
+  0% {
+    /*-webkit-filter: blur(10px);
+    color: #151b1b;
+    width: 30%;*/
+    opacity: 0;
+  }
+  25% {
+    /*-webkit-filter: blur(0px);
+    color: #151b1b;
+    width: 20%;*/
+    opacity: 0;
+  }
+  75% {
+    /*-webkit-filter: blur(10px);
+    width: 30%;*/
+    opacity: 1;
+  }
+  100% {
+    /*-webkit-filter: blur(0px);*/
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mouvName {
+  0% {
+    -webkit-filter: blur(10px);
+    /*color: #151b1b;*/
+    width: 40%;
+  }
+  25% {
+    -webkit-filter: blur(0px);
+    /*color: #151b1b;
+    width: 20%;*/
+    width: 40%;
+  }
+  75% {
+    webkit-filter: blur(10px);
+    /*-width: 30%;*/
+    width: 40%;
+  }
+  100% {
+    webkit-filter: blur(0px);
+    /*-width: 40%;*/
+  }
+}
+@keyframes mouvname {
+  0% {
+    filter: blur(10px);
+    /*color: #151b1b;
+    width: 30%;*/
+    width: 40%;
+  }
+  25% {
+    filter: blur(0px);
+    /*color: #151b1b;
+    width: 20%;*/
+    width: 40%;
+  }
+  75% {
+    filter: blur(10px);
+    /*width: 30%;*/
+    width: 40%;
+  }
+  100% {
+    webkit-filter: blur(0px);
+    width: 40%;
+  }
+}
+/*// No JS
+.no-js {
+  .da-thumbs li a div {
+    top: 0px;
+    left: -100%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .da-thumbs li a:hover div{
+    left: 0px;
+  }
+}*/
